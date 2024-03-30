@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旅客機運用案内所</title>
+  <link rel="stylesheet" href="nh_a388_styles.css">
+  <script src="nh_a388_script.js"></script>
+</head>
+<body>
+  <table id="operationsTable">
+    <thead>
+      <tr>
+        <th>機体番号</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>JL900</td>
+      </tr>
+      <tr>
+        <td>JL901</td>
+      </tr>
+      <tr>
+        <td>NH183</td>
+      </tr>
+      <tr>
+        <td>NH184</td>
+      </tr>
+    </tbody>
+  </table>
 
+  <div id="inputForm" class="hidden">
+    <input type="text" id="trainNumber" placeholder="機体番号">
+    <input type="hidden" id="selectedRowIndex">
+    <input type="hidden" id="selectedColumnIndex">
+    <button onclick="submitForm()">送信</button>
+  </div>
+  
+</body>
+</html>
