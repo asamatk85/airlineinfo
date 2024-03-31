@@ -17,6 +17,9 @@
         <td>JL500</td>
       </tr>
       <tr>
+        <td>JL501</td>
+      </tr>
+      <tr>
         <td>JL502</td>
       </tr>
       <tr>
@@ -66,7 +69,7 @@
 </html>
 
 <style>
-  /* ここにCSSを記述 */
+/* ここにCSSを記述 */
 table {
   border-collapse: collapse;
   width: auto; /* ページの中央に配置するために幅を自動に設定 */
@@ -78,7 +81,7 @@ th, td {
   padding: 8px;
   text-align: center;
   cursor: pointer; /* クリックしたときのカーソルを変更 */
-  width: 80px; /* セルの幅を80pxに設定 */
+  width: 50px; /* セルの幅を50pxに設定 */
 }
 
 th {
@@ -96,15 +99,16 @@ button {
 }
 
 #inputForm {
-  position: fixed; /* フォームを固定配置する */
-  top: 50%; /* 上端をページの中央に配置 */
+  position: absolute; /* フォームを絶対配置する */
+  bottom: -200px; /* 下から200pxの位置に配置 */
   left: 50%; /* 左端をページの中央に配置 */
-  transform: translate(-50%, -50%); /* 中心を基準にしてフォームを中央に配置 */
+  transform: translateX(-50%); /* 中心を基準にしてフォームを中央に配置 */
   padding: 20px; /* フォームの余白を追加 */
   background-color: #f2f2f2; /* フォームの背景色を設定 */
   border: 1px solid #ddd; /* フォームの枠線を設定 */
   border-radius: 5px; /* フォームの角を丸くする */
 }
+
 </style>
 
 <script>
