@@ -38,6 +38,48 @@
 </body>
 </html>
 
+<style>
+  /* ここにCSSを記述 */
+table {
+  border-collapse: collapse;
+  width: auto; /* ページの中央に配置するために幅を自動に設定 */
+  margin: 0 auto; /* ページの中央に配置する */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer; /* クリックしたときのカーソルを変更 */
+  width: 80px; /* セルの幅を80pxに設定 */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+input[type="text"] {
+  margin-right: 10px;
+  width: 200px; /* フォームの幅を200pxに設定 */
+  height: 30px; /* フォームの高さを30pxに設定 */
+}
+
+button {
+  height: 36px; /* 送信ボタンの高さを36pxに設定 */
+}
+
+#inputForm {
+  position: fixed; /* フォームを固定配置する */
+  top: 50%; /* 上端をページの中央に配置 */
+  left: 50%; /* 左端をページの中央に配置 */
+  transform: translate(-50%, -50%); /* 中心を基準にしてフォームを中央に配置 */
+  padding: 20px; /* フォームの余白を追加 */
+  background-color: #f2f2f2; /* フォームの背景色を設定 */
+  border: 1px solid #ddd; /* フォームの枠線を設定 */
+  border-radius: 5px; /* フォームの角を丸くする */
+}
+</style>
+
 <script>
   // ページ読み込み時に実行する処理
 document.addEventListener("DOMContentLoaded", function () {
